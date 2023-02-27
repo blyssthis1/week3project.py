@@ -1,8 +1,9 @@
 class rent:
-    def __init__(self, income, expense):
-        self.income = income
-        self.expense = expense
+    def __init__(self):
+        self.income = {}
+        self.expense = {}
         self.cashflow = 0
+
 
 
 
@@ -50,7 +51,7 @@ class rent:
 
 
 
-rentG = rent({"rent":10}, {"tax":9})
+rentG = rent()
 
 rentG.add_income()
 rentG.add_expense()
